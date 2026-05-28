@@ -22,7 +22,7 @@ This project simulates the core daily workflow of a **fund accountant**:
 
 ## 📦 Portfolio
 
-A mock portfolio of 15 securities — mix of:
+A mock portfolio of 15 securities - mix of:
 - **Global large-cap equities** (NVIDIA, Apple, Alphabet, Microsoft, Amazon, TSMC, Broadcom, Tesla, Meta, ASML)
 - **Global ETFs** (Vanguard VWRL, SPY, QQQ, iShares Emerging Markets, US Aggregate Bond)
 
