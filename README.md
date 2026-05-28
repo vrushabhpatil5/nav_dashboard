@@ -2,7 +2,7 @@
 
 A real-time (15-min delayed) Fund NAV Dashboard built with Python and Streamlit. Uses a mock diversified portfolio of global equities and ETFs to simulate real-world fund accounting workflows.
 
-Built by **Vrushabh** — MSc International Accounting & Finance, Dublin Business School (First Class Honours).
+Built by **Vrushabh** - MSc International Accounting & Finance, Dublin Business School.
 
 ---
 
@@ -33,11 +33,11 @@ A mock portfolio of 15 securities — mix of:
 ## 🛠️ Tech Stack
 
 - **Python 3.11+**
-- **yfinance** — Yahoo Finance price feeds
-- **pandas** — NAV and P&L calculations
-- **Streamlit** — Live dashboard UI
-- **Plotly** — Interactive charts
-- **numpy** — Numerical operations
+- **yfinance** - Yahoo Finance price feeds
+- **pandas** - NAV and P&L calculations
+- **Streamlit** - Live dashboard UI
+- **Plotly** - Interactive charts
+- **numpy** - Numerical operations
 
 ---
 
@@ -52,7 +52,7 @@ cd nav-dashboard
 pip install -r requirements.txt
 
 # 3. Run the dashboard
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Then open `http://localhost:8501` in your browser.
@@ -64,10 +64,11 @@ Then open `http://localhost:8501` in your browser.
 ```
 nav-dashboard/
 │
-├── app.py            # Streamlit dashboard (frontend)
-├── nav_engine.py     # NAV calculation engine (core logic)
-├── portfolio.py      # Mock fund portfolio configuration
-├── requirements.txt  # Python dependencies
+├── app.py                 # Streamlit dashboard + CSV upload
+├── nav_engine.py          # NAV calculation engine (core logic)
+├── portfolio.py           # Default portfolio + fund name config
+├── requirements.txt       # Python dependencies
+├── sample_portfolio.csv   # Template CSV for custom portfolios
 └── README.md
 ```
 
@@ -79,7 +80,7 @@ nav-dashboard/
 - ✅ Real-time NAV calculation
 - ✅ Unrealised P&L per holding
 - ✅ Daily P&L tracking
-- ✅ Pricing anomaly alerts (stale / missing prices)
+- ✅ Pricing anomaly alerts (stale /missing prices)
 - ✅ Fund exposure by asset class and sector
 - ✅ Auto-refresh every 60 seconds
 - ✅ Filter by asset class
@@ -101,4 +102,4 @@ Built as part of a personal finance & data analytics portfolio while job hunting
 - 🎓 MSc International Accounting & Finance - Dublin Business School (First Class Honours)
 - 💼 6+ years in finance operations
 - 📍 Based in Dublin, Ireland
-- 🔗 [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/vrushabhpatil-finance)
