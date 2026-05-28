@@ -98,7 +98,7 @@ Past performance is not a reliable guide to future performance.
 
 Built as part of a personal finance & data analytics portfolio while job hunting in Dublin, Ireland.
 
-- 🎓 MSc International Accounting & Finance — Dublin Business School (First Class Honours)
+- 🎓 MSc International Accounting & Finance - Dublin Business School (First Class Honours)
 - 💼 6+ years in finance operations
 - 📍 Based in Dublin, Ireland
 - 🔗 [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
