@@ -80,10 +80,11 @@ with st.sidebar:
 
     st.divider()
     st.subheader("🔍 Filter")
+    all_asset_classes = ["Equity", "ETF", "Bond ETF", "Commodity", "REIT"]
     asset_filter = st.multiselect(
         "Asset Class",
-        options=["Equity", "ETF", "Bond ETF"],
-        default=["Equity", "ETF", "Bond ETF"]
+        options=all_asset_classes,
+        default=all_asset_classes
     )
 
     st.divider()
