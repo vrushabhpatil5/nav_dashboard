@@ -1,0 +1,46 @@
+ticker,name,shares,cost_price,asset_class,sector,currency
+NVDA,NVIDIA Corp,150,80,Equity,Technology,USD
+AAPL,Apple Inc,200,150,Equity,Technology,USD
+MSFT,Microsoft Corp,120,280,Equity,Technology,USD
+GOOGL,Alphabet Inc,180,120,Equity,Communication,USD
+META,Meta Platforms Inc,100,250,Equity,Communication,USD
+AMZN,Amazon.com Inc,130,130,Equity,Consumer Discretionary,USD
+TSLA,Tesla Inc,160,200,Equity,Consumer Discretionary,USD
+JPM,JPMorgan Chase & Co,180,140,Equity,Financials,USD
+GS,Goldman Sachs Group,60,330,Equity,Financials,USD
+JNJ,Johnson & Johnson,200,160,Equity,Healthcare,USD
+UNH,UnitedHealth Group,80,480,Equity,Healthcare,USD
+XOM,Exxon Mobil Corp,250,95,Equity,Energy,USD
+CVX,Chevron Corp,180,155,Equity,Energy,USD
+AVGO,Broadcom Inc,80,550,Equity,Technology,USD
+TSM,Taiwan Semiconductor ADR,200,90,Equity,Technology,USD
+ASML,ASML Holding NV,40,600,Equity,Technology,EUR
+SAP,SAP SE,150,130,Equity,Technology,EUR
+SIE.DE,Siemens AG,120,140,Equity,Industrials,EUR
+AIR.PA,Airbus SE,100,120,Equity,Industrials,EUR
+MC.PA,LVMH Moët Hennessy,30,700,Equity,Consumer Discretionary,EUR
+OR.PA,L'Oréal SA,60,380,Equity,Consumer Staples,EUR
+SHEL.L,Shell PLC,800,24,Equity,Energy,GBP
+AZN.L,AstraZeneca PLC,200,100,Equity,Healthcare,GBP
+HSBA.L,HSBC Holdings PLC,1500,6,Equity,Financials,GBP
+RIO.L,Rio Tinto PLC,300,50,Equity,Materials,GBP
+7203.T,Toyota Motor Corp,500,2200,Equity,Consumer Discretionary,JPY
+6758.T,Sony Group Corp,300,10000,Equity,Technology,JPY
+9984.T,SoftBank Group Corp,400,7000,Equity,Technology,JPY
+NESN.SW,Nestlé SA,300,100,Equity,Consumer Staples,CHF
+RHHBY,Roche Holding AG,100,250,Equity,Healthcare,CHF
+NOVN.SW,Novartis AG,200,90,Equity,Healthcare,CHF
+SPY,SPDR S&P 500 ETF,300,420,ETF,US Equity,USD
+QQQ,Invesco QQQ (Nasdaq 100),150,350,ETF,US Tech Equity,USD
+IEMG,iShares MSCI Emerging Mkts,400,48,ETF,Emerging Markets,USD
+EFA,iShares MSCI EAFE ETF,350,70,ETF,Developed Ex-US,USD
+VWO,Vanguard FTSE Emerging Mkts,500,42,ETF,Emerging Markets,USD
+VWRL.L,Vanguard FTSE All-World ETF,500,95,ETF,Global Equity,GBP
+AGG,iShares US Aggregate Bond,300,96,Bond ETF,Fixed Income,USD
+TLT,iShares 20+ Year Treasury,200,100,Bond ETF,Fixed Income,USD
+HYG,iShares High Yield Corp Bond,400,76,Bond ETF,Fixed Income,USD
+EMB,iShares JP Morgan EM Bond,300,88,Bond ETF,EM Fixed Income,USD
+GLD,SPDR Gold Shares,200,170,Commodity,Gold,USD
+SLV,iShares Silver Trust,500,20,Commodity,Silver,USD
+USO,United States Oil Fund,400,65,Commodity,Oil,USD
+VNQ,Vanguard Real Estate ETF,300,82,REIT,Real Estate,USD
