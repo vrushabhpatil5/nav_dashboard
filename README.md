@@ -47,11 +47,11 @@ A mock portfolio of **45 securities** across 5 currencies and 7 asset classes:
 ## 🛠️ Tech Stack
 
 - **Python 3.11+**
-- **yfinance** - Yahoo Finance price feeds + FX rates
-- **pandas** - NAV and P&L calculations
-- **Streamlit** - Live dashboard UI
-- **Plotly** - Interactive charts
-- **numpy** - Numerical operations
+- **yfinance**   - Yahoo Finance price feeds + FX rates
+- **pandas**     - NAV and P&L calculations
+- **Streamlit**  - Live dashboard UI
+- **Plotly**     - Interactive charts
+- **numpy**      - Numerical operations
 
 ---
 
@@ -97,12 +97,12 @@ nav-dashboard/
 - ✅ Live FX rate panel with stale rate detection
 - ✅ Real-time NAV calculation
 - ✅ Unrealised & daily P&L per holding
-- ✅ Pricing anomaly alerts (stale / missing prices)
+- ✅ Pricing anomaly alerts (stale/missing prices)
 - ✅ LSE pence-to-GBP auto correction
 - ✅ ADR fallback for Swiss, Japanese & European tickers
 - ✅ Currency exposure breakdown chart
 - ✅ Fund exposure by asset class and sector
-- ✅ CSV upload — bring your own portfolio
+- ✅ CSV upload, bring your own portfolio
 - ✅ Auto-refresh every 60 seconds
 - ✅ Filter by asset class (Equity, ETF, Bond ETF, Commodity, REIT)
 
