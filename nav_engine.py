@@ -97,13 +97,14 @@ def fetch_prices(tickers: list[str]) -> dict:
     return results
 
 
-def fetch_fx_rates(reporting_ccy: str = "USD") -> dict:
+def fetch_fx_rates(reporting_ccy: str = "USD", portfolio_data: list = None) -> dict:
     """
     Fetch FX rates for all portfolio currencies.
     Returns: { "EUR": {"rate": 1.08, "stale": False}, ... }
     All rates expressed as: 1 local CCY = X reporting CCY.
     """
-    portfolio_ccys = set(h.get("currency", "USD") for h in PORTFOLIO)
+    source = portfolio_data if portfolio_data is not None else PORTFOLIO
+    portfolio_ccys = set(str(h.get("currency", "USD")).strip().upper() for h in source)
     all_ccys = portfolio_ccys | {reporting_ccy}
 
     rates_in_usd = {"USD": 1.0}

@@ -159,7 +159,7 @@ else:
 def load_data(portfolio_key: str, portfolio_data: list, rep_ccy: str):
     tickers   = [h["ticker"] for h in portfolio_data]
     prices    = fetch_prices(tickers)
-    fx_rates  = fetch_fx_rates(rep_ccy)
+    fx_rates  = fetch_fx_rates(rep_ccy, portfolio_data)
     df        = calculate_nav_from_portfolio(prices, portfolio_data, rep_ccy, fx_rates)
     summary   = get_fund_summary(df, rep_ccy)
     return df, summary, fx_rates
