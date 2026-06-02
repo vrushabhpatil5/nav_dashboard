@@ -1,0 +1,16 @@
+ticker,name,shares,cost_price,asset_class,sector,currency
+NVDA,NVIDIA Corp,150,80.00,Equity,Information Technology,USD
+AAPL,Apple Inc,200,150.00,Equity,Information Technology,USD
+GOOGL,Alphabet Inc,180,120.00,Equity,Communication Services,USD
+MSFT,Microsoft Corp,120,280.00,Equity,Information Technology,USD
+AMZN,Amazon.com Inc,130,130.00,Equity,Consumer Discretionary,USD
+TSM,Taiwan Semiconductor,200,90.00,Equity,Information Technology,USD
+AVGO,Broadcom Inc,80,550.00,Equity,Information Technology,USD
+TSLA,Tesla Inc,160,200.00,Equity,Consumer Discretionary,USD
+META,Meta Platforms Inc,100,250.00,Equity,Communication Services,USD
+ASML,ASML Holding NV,40,600.00,Equity,Information Technology,EUR
+SPY,SPDR S&P 500 ETF,300,420.00,ETF,US Equity,USD
+QQQ,Invesco QQQ Nasdaq 100,150,350.00,ETF,US Tech Equity,USD
+IEMG,iShares MSCI Emerging Mkts,400,48.00,ETF,Emerging Markets,USD
+AGG,iShares US Aggregate Bond,300,96.00,Bond ETF,Fixed Income,USD
+VWRL.L,Vanguard FTSE All-World ETF,500,95.00,ETF,Global Equity,GBP
