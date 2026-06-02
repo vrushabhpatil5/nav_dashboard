@@ -47,11 +47,11 @@ A mock portfolio of **45 securities** across 5 currencies and 7 asset classes:
 ## 🛠️ Tech Stack
 
 - **Python 3.11+**
-- **yfinance** — Yahoo Finance price feeds + FX rates
-- **pandas** — NAV and P&L calculations
-- **Streamlit** — Live dashboard UI
-- **Plotly** — Interactive charts
-- **numpy** — Numerical operations
+- **yfinance** - Yahoo Finance price feeds + FX rates
+- **pandas** - NAV and P&L calculations
+- **Streamlit** - Live dashboard UI
+- **Plotly** - Interactive charts
+- **numpy** - Numerical operations
 
 ---
 
@@ -119,8 +119,8 @@ Past performance is not a reliable guide to future performance.
 
 Built as part of a personal finance & data analytics portfolio while job hunting in Dublin, Ireland.
 
-- 🎓 MSc International Accounting & Finance — Dublin Business School (First Class Honours)
+- 🎓 MSc International Accounting & Finance - Dublin Business School (First Class Honours)
 - 💼 6+ years in finance operations (AP, ERP, MIS, reconciliations)
-- 📍 Based in Dublin, Ireland | Stamp 1G — no sponsorship required
+- 📍 Based in Dublin, Ireland
 - 🔗 [LinkedIn](https://www.linkedin.com/in/vrushabhpatil-finance)
 - 🔗 [Live Dashboard](https://vrushabhpatil5-nav-dashboard.streamlit.app/)
