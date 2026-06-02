@@ -4,7 +4,7 @@ A real-time (15-min delayed) Fund NAV Dashboard built with Python and Streamlit.
 
 🔗 **Live Demo:** https://vrushabhpatil5-nav-dashboard.streamlit.app/
 
-Built by **Vrushabh Patil** — MSc International Accounting & Finance, Dublin Business School (First Class Honours)
+Built by **Vrushabh Patil** - MSc International Accounting & Finance, Dublin Business School (First Class Honours)
 
 ---
 
