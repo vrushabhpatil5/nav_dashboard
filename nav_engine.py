@@ -159,6 +159,10 @@ def calculate_nav(price_data: dict, reporting_ccy: str = "USD", fx_rates: dict =
         cost_price    = holding["cost_price"]
         shares        = holding["shares"]
 
+        # If ADR fallback was used, price is in USD — override currency to avoid mismatch
+        if px.get("used_fallback"):
+            local_ccy = "USD"
+
         fx_info  = fx_rates.get(local_ccy, {"rate": 1.0, "stale": False})
         fx_rate  = fx_info.get("rate") or 1.0
         fx_stale = fx_info.get("stale", False)

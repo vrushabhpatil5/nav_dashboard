@@ -186,6 +186,10 @@ def calculate_nav_from_portfolio(price_data, portfolio_data, reporting_ccy, fx_r
             current_price = current_price / 100
             prev_close    = prev_close / 100 if prev_close else None
 
+        # If ADR fallback was used, price is in USD — override currency to avoid mismatch
+        if px.get("used_fallback"):
+            local_ccy = "USD"
+
         fx_info  = fx_rates.get(local_ccy, {"rate": 1.0, "stale": False})
         fx_rate  = fx_info.get("rate") or 1.0
         fx_stale = fx_info.get("stale", False)
