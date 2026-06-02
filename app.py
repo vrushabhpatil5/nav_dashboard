@@ -164,12 +164,15 @@ def load_data(portfolio_key: str, portfolio_data: list, rep_ccy: str):
     return df, summary, fx_rates
 
 
+LSE_PENCE_TICKERS = {"SHEL.L", "AZN.L", "HSBA.L", "RIO.L", "ULVR.L", "BP.L", "GSK.L", "BATS.L"}
+
 def calculate_nav_from_portfolio(price_data, portfolio_data, reporting_ccy, fx_rates):
     import numpy as np
     rows = []
     for holding in portfolio_data:
         ticker     = str(holding["ticker"]).strip().upper()
-        px         = price_data.get(ticker, {})
+        # Guarantee entry even if price fetch failed entirely
+        px         = price_data.get(ticker, {"price": None, "prev_close": None, "stale": True, "missing": True, "fetched_at": "—"})
         local_ccy  = str(holding.get("currency", "USD")).strip().upper()
 
         current_price = px.get("price")
@@ -177,11 +180,16 @@ def calculate_nav_from_portfolio(price_data, portfolio_data, reporting_ccy, fx_r
         cost_price    = float(holding["cost_price"])
         shares        = float(holding["shares"])
 
+        # LSE pence → GBP fix
+        if ticker in LSE_PENCE_TICKERS and current_price and current_price > 500:
+            current_price = current_price / 100
+            prev_close    = prev_close / 100 if prev_close else None
+
         fx_info  = fx_rates.get(local_ccy, {"rate": 1.0, "stale": False})
         fx_rate  = fx_info.get("rate") or 1.0
         fx_stale = fx_info.get("stale", False)
 
-        local_mv         = round(current_price * shares, 2) if current_price else None
+        local_mv         = round(current_price * shares, 2) if current_price is not None else None
         local_cost_basis = round(cost_price * shares, 2)
 
         market_value = round(local_mv * fx_rate, 2)         if local_mv is not None else None
@@ -191,9 +199,9 @@ def calculate_nav_from_portfolio(price_data, portfolio_data, reporting_ccy, fx_r
         unrealised_pct = round((unrealised_pnl / cost_basis) * 100, 2) if unrealised_pnl is not None and cost_basis else None
 
         daily_pnl, daily_pct = None, None
-        if current_price and prev_close:
+        if current_price is not None and prev_close is not None:
             daily_pnl = round((current_price - prev_close) * shares * fx_rate, 2)
-            daily_pct = round(((current_price - prev_close) / prev_close) * 100, 2)
+            daily_pct = round(((current_price - prev_close) / prev_close) * 100, 2) if prev_close != 0 else None
 
         rows.append({
             "Ticker":         ticker,
