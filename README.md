@@ -78,11 +78,12 @@ Then open `http://localhost:8501` in your browser.
 ```
 nav-dashboard/
 │
-├── app.py                 # Streamlit dashboard + CSV upload
-├── nav_engine.py          # NAV engine — pricing, FX, P&L logic
-├── portfolio.py           # Default portfolio + FX config
-├── requirements.txt       # Python dependencies
-├── sample_portfolio.csv   # Template CSV for custom portfolios
+├── app.py                               # Streamlit dashboard + CSV upload
+├── nav_engine.py                        # NAV engine — pricing, FX, P&L logic
+├── portfolio.py                         # Default portfolio + FX config
+├── requirements.txt                     # Python dependencies
+├── sample_portfolio.csv                 # Template CSV for custom portfolios
+├── sample_portfolio_multicurrency.csv   # Template CSV for custom portfolios
 └── README.md
 ```
 
